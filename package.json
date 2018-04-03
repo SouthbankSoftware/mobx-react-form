@@ -17,6 +17,7 @@
     "build:umdmin": "webpack --output-filename mobx-react-form.umd.min.js -p",
     "prebuild": "npm run clean:build",
     "precommit": "npm run lint && npm run cover",
+    "prepare": "npm run build",
     "commit": "git-cz && git push origin",
     "watch:build": "babel --watch -d lib/ src/",
     "watch:test": "npm run test -- -w",
